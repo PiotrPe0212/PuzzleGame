@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D6B9F723-020A-4D0F-35A7-34A28BB37A4A}</ProjectGuid>
+    <ProjectGuid>{A6D81C11-EBE8-FF70-E5BA-41AE90172BDE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Psdimporter.Editor</AssemblyName>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\Analytics.cs" />
@@ -669,43 +672,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PsdPlugin.csproj">
-      <Project>{C24FF7CC-61A6-1B54-51C6-F127A83385E6}</Project>
+      <Project>{2AD411B2-5D6A-387B-C036-476085071F1B}</Project>
       <Name>PsdPlugin</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{30DA51A6-FDCA-7319-F04C-0ABC0D792A16}</Project>
+      <Project>{1FB7ED0B-AD79-8BD8-DAED-06B9111FE02E}</Project>
       <Name>Unity.InternalAPIEditorBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{C634DB50-F3EC-234B-DCF4-805B5A68164C}</Project>
+      <Project>{6FECB63E-5F4F-74BE-9DCA-5D146A426CFD}</Project>
       <Name>Unity.2D.Common.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{CC2EC312-B5CB-57BB-971A-84780C39AE63}</Project>
+      <Project>{44B4B190-C983-E15F-5FBF-FA6B0B62206C}</Project>
       <Name>Unity.2D.Animation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
-      <Project>{642E1DBE-0ED6-725C-5834-9A0B01265C0E}</Project>
+      <Project>{329B367F-820A-C17E-B326-4FC14EE4588F}</Project>
       <Name>Unity.2D.Animation.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{283E4FAF-84CD-032B-9E19-F3A63AE23BF5}</Project>
+      <Project>{3FFC7F4E-1F0A-7863-8154-6E68231EBF68}</Project>
       <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{29552B89-19CF-646A-65D3-F80EB7CFA22C}</Project>
+      <Project>{D1F8838C-1514-AA8B-281B-625B7A95FB94}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{466C66B9-B59A-FDAB-1971-ACEEFEC4A815}</Project>
+      <Project>{FC789065-9DB2-D55A-5FD8-FB79CBE36AE7}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{20402F69-76DF-B391-A48E-CDE219CBD11D}</Project>
+      <Project>{3C34FD9A-C088-51AE-C2C8-0FE204EDE15E}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{F27DAA36-A7DE-E514-A423-8505DA411E22}</Project>
+      <Project>{79327FFF-76AE-13C5-7B1F-2121B841D23E}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

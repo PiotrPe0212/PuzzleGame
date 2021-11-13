@@ -280,8 +280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4182494f4a6114792028ce16ec0fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: 0
-  test2: 0
+  _board: {fileID: 0}
+  bigFireOn: 0
+  smallFireOn: 0
+  bigFireEnds: 0
 --- !u!1 &334710840623355183
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,4 +330,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _boardTile: {fileID: 8200776502870519478, guid: 8bd5580312038a045abddbac92f94f8c, type: 3}
+  GameManager: {fileID: 0}
+  pointText: {fileID: 0}
+  endScore: {fileID: 0}
+  filledTiles: 0
   BoardPoints: 4

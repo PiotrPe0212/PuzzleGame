@@ -21,7 +21,7 @@ public class puzzle : MonoBehaviour
             if (puzzlePoint == initPoints && gameObject.transform.tag == "Puzzle")
             {
                 gameObject.transform.position = new Vector3(gameObject.transform.position.x + 0.03f, gameObject.transform.position.y, gameObject.transform.position.z);
-                if(gameObject.transform.position.x > 5)
+                if(gameObject.transform.position.x > 10)
                     Destroy(gameObject);
             }
         if( gameObject.transform.tag == "PuzzleDrop")

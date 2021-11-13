@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CC2EC312-B5CB-57BB-971A-84780C39AE63}</ProjectGuid>
+    <ProjectGuid>{44B4B190-C983-E15F-5FBF-FA6B0B62206C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Animation.Editor</AssemblyName>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.6\Editor\SkinningModule\VisibilityTool\BoneTreeViewModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.6\Editor\SkinningModule\SpriteMeshData\EditableBoneWeight.cs" />
@@ -846,47 +849,47 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{30DA51A6-FDCA-7319-F04C-0ABC0D792A16}</Project>
+      <Project>{1FB7ED0B-AD79-8BD8-DAED-06B9111FE02E}</Project>
       <Name>Unity.InternalAPIEditorBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{F70ADFF7-98E9-E165-52CF-F6F49647041B}</Project>
+      <Project>{C38465C2-17BE-6B75-5CFC-9C18ADEAEED9}</Project>
       <Name>Unity.InternalAPIEngineBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{C634DB50-F3EC-234B-DCF4-805B5A68164C}</Project>
+      <Project>{6FECB63E-5F4F-74BE-9DCA-5D146A426CFD}</Project>
       <Name>Unity.2D.Common.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{CE3229C8-4294-A7ED-6323-AAB73E6B6008}</Project>
+      <Project>{F249469A-91A1-D9F7-A9D2-68D55659D7C6}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
-      <Project>{642E1DBE-0ED6-725C-5834-9A0B01265C0E}</Project>
+      <Project>{329B367F-820A-C17E-B326-4FC14EE4588F}</Project>
       <Name>Unity.2D.Animation.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
-      <Project>{66BB6BCC-553B-70F2-8D22-B8B108BEBBDC}</Project>
+      <Project>{41AC9DCD-1E96-B543-72FF-500BDA289D06}</Project>
       <Name>Unity.2D.Animation.Triangle.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{283E4FAF-84CD-032B-9E19-F3A63AE23BF5}</Project>
+      <Project>{3FFC7F4E-1F0A-7863-8154-6E68231EBF68}</Project>
       <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{29552B89-19CF-646A-65D3-F80EB7CFA22C}</Project>
+      <Project>{D1F8838C-1514-AA8B-281B-625B7A95FB94}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{466C66B9-B59A-FDAB-1971-ACEEFEC4A815}</Project>
+      <Project>{FC789065-9DB2-D55A-5FD8-FB79CBE36AE7}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{20402F69-76DF-B391-A48E-CDE219CBD11D}</Project>
+      <Project>{3C34FD9A-C088-51AE-C2C8-0FE204EDE15E}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{F27DAA36-A7DE-E514-A423-8505DA411E22}</Project>
+      <Project>{79327FFF-76AE-13C5-7B1F-2121B841D23E}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
