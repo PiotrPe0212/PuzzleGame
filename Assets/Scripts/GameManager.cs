@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
     {
         _GameCanvas.enabled = true;
         _StartCanvas.enabled = false;
-        Debug.Log("Start");
         GameStarted?.Invoke();
     }
 

@@ -77,6 +77,7 @@ public class Board : MonoBehaviour
     void BoardCreating()
     {
         _points = 0;
+        filledTiles = 0;
         pointText.text ="Points: " + _points.ToString();
         for (var i = 0; i < (BoardPoints / 4); i++)
         {
