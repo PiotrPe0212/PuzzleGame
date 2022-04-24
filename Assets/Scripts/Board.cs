@@ -24,7 +24,7 @@ public class Board : MonoBehaviour
         set
         {
             filledTiles += value;
-   
+
         }
     }
     private void Awake()
@@ -47,7 +47,7 @@ public class Board : MonoBehaviour
         Instance = this;
         _gameStarted = false;
         BoardCreating();
-            // _pointsText = Text.GetComponent<Text>();
+        
     }
 
 
@@ -71,20 +71,20 @@ public class Board : MonoBehaviour
         if (filledTiles < BoardPoints)
             _fulfilledBoard = false;
 
-       
+
     }
 
     void BoardCreating()
     {
         _points = 0;
         filledTiles = 0;
-        pointText.text ="Points: " + _points.ToString();
+        pointText.text = "Points: " + _points.ToString();
         for (var i = 0; i < (BoardPoints / 4); i++)
         {
             for (var j = 0; j < 4; j++)
             {
                 GameObject rowObj = Instantiate(_boardTile, new Vector3(0, 0, 1), Quaternion.identity, gameObject.transform);
-                rowObj.transform.localPosition = new Vector3(-1f +j*0.65f, -0.9f+ i*0.65f, 0);
+                rowObj.transform.localPosition = new Vector3(-1f + j * 0.65f, -0.9f + i * 0.65f, 0);
             }
         }
     }
@@ -96,7 +96,7 @@ public class Board : MonoBehaviour
 
     public void BoardReset()
     {
-      
+
         for (int i = 0; i < transform.childCount; i++)
         {
             if (transform.GetChild(i).CompareTag("BoardTile"))
@@ -111,6 +111,6 @@ public class Board : MonoBehaviour
     {
         endScore.text = _points.ToString();
     }
-    
-    
+
+
 }

@@ -10,7 +10,7 @@ public class BoardTile : MonoBehaviour
     public bool _puzzleDetected;
     public RaycastHit2D _puzzleRay;
     public GameObject _puzzle;
-    
+
     public int _puzzlePoint;
     private GameObject _boardObject;
     private Board _boardScript;
@@ -21,14 +21,14 @@ public class BoardTile : MonoBehaviour
         _tilePosition = gameObject.transform.position;
         _puzzleDetected = false;
         _ray = new Ray(_tilePosition, transform.forward);
-        
+
 
     }
 
     private void Awake()
     {
         _boardObject = GameObject.Find("Board");
-        _boardScript = (Board)_boardObject.GetComponent (typeof(Board));
+        _boardScript = (Board)_boardObject.GetComponent(typeof(Board));
         _boardScript.BoardCleaning += AllTilesFilled;
 
     }
@@ -40,7 +40,7 @@ public class BoardTile : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+
         if (Physics2D.GetRayIntersection(_ray, 10))
         {
             _puzzleRay = Physics2D.GetRayIntersection(_ray, 10);
@@ -55,14 +55,14 @@ public class BoardTile : MonoBehaviour
                     _puzzleDetected = true;
                     _reset = false;
                     Invoke("AddBoardPoint", 0.5f);
-                   
+
                 }
             }
-            
+
         }
         else
         {
-          
+
             if (!_reset)
             {
                 _puzzleDetected = false;
@@ -78,7 +78,7 @@ public class BoardTile : MonoBehaviour
     private void AllTilesFilled()
     {
         Invoke("Destr", 1f);
-        
+
     }
 
     void Destr()

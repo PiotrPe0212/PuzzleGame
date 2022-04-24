@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private Canvas _StartCanvas;
+    [SerializeField] private Canvas _InitCanvas;
     [SerializeField] private Canvas _GameOverCanvas;
     [SerializeField] private Canvas _GameCanvas;
 
@@ -21,10 +22,15 @@ public class GameManager : MonoBehaviour
         _GameCanvas.enabled = false;
     }
 
+    public void InitPanel()
+    {
+        _InitCanvas.enabled = true;
+        _StartCanvas.enabled = false;
+    }
     public void StartGame()
     {
         _GameCanvas.enabled = true;
-        _StartCanvas.enabled = false;
+        _InitCanvas.enabled = false;
         GameStarted?.Invoke();
     }
 
@@ -38,7 +44,7 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         _GameOverCanvas.enabled = false;
-GameReset?.Invoke();
+        GameReset?.Invoke();
     }
-    
+
 }
